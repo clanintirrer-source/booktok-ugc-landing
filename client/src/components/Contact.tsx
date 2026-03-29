@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Mail, Phone, MapPin, Send, ExternalLink } from 'lucide-react';
+import { Mail, Briefcase, MapPin, Send, ExternalLink } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -144,18 +144,21 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Phone */}
+              {/* Fiverr Gig */}
               <div className="flex gap-4">
                 <div className="w-12 h-12 rounded-lg gradient-coral-pink flex items-center justify-center flex-shrink-0">
-                  <Phone size={24} className="text-white" />
+                  <Briefcase size={24} className="text-white" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Phone</p>
+                  <p className="font-semibold text-gray-900">Fiverr Gig</p>
                   <a
-                    href="tel:+1234567890"
-                    className="text-gray-600 hover:text-[#FF6B5B] transition-colors"
+                    href="https://www.fiverr.com/s/XL1ZkGP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-[#FF6B5B] transition-colors inline-flex items-center gap-1"
                   >
-                    +1 (234) 567-890
+                    View My Services
+                    <ExternalLink size={14} />
                   </a>
                 </div>
               </div>
